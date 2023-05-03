@@ -46,6 +46,14 @@ function getActivities(res) {
         
         )
 }
+
+//add markers to my favourite running spots in montreal
+
+var marker0 = L.marker([45.500440, -73.589150]).bindPopup("<b>Mont Royal</b><br>Large park with 12.5km main gravel path as well as singletrack trails.").addTo(map); //mtn
+var marker1 = L.marker([45.466112, -73.607016]).bindPopup("<b>Falaise St-Jacques</b><br>4km soft gravel path, opened in 2021.").addTo(map); //falaise
+var marker2 = L.marker([45.471798, -73.580542]).bindPopup("<b>Canal Lachine</b><br>14.5km flat bike path with dirt and gravel sections.").addTo(map); //canal
+var marker3 = L.marker([45.560443, -73.632484]).bindPopup("<b>Parc Frederic Back</b><br>5.5km gravel loop with slight hills.").addTo(map); //fred back
+
 }
 
 function reAuthorize(){
